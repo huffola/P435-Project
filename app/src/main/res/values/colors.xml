@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_brown">#3a301d</color>
+    <color name="mud_brown">#605443</color>
+    <color name="slate_highlight">#936039</color>
+    <color name="dark_brown">#18140c</color>
+    <color name="light_tan">#d0bd97</color>
+    <color name="blackish">#0c0a06</color>
+    <color name="neutral">#e2dbc8</color> //primary background
+</resources>
