@@ -19,26 +19,26 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="281dp"
+        android:layout_height="48dp"
         android:layout_margin="16dp"
-        android:hint="Enter Item Value Here"
+        android:autofillHints=""
+        android:hint="@string/enter_item_value_here"
+        android:textColorHint="#757575"
         android:inputType="text"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="527dp" />
+  />
 
     <Button
         android:id="@+id/showInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:backgroundTint="@color/blackish"
-        android:text="Search"
-        android:textColor="@android:color/white"
+        android:backgroundTint="@color/mud_brown"
+        android:text="@string/search"
+        android:textColor="@color/light_tan"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="479dp" />
+   />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

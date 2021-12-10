@@ -22,12 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         val view = findViewById<RecyclerView>(R.id.list)
         val ctx = this
-        val searchButton = findViewById<Button>(R.id.showInput)
-        val editText = findViewById<EditText>(R.id.editText)
-        searchButton.setOnClickListener {
-            var inputtext = editText.text //set value
-            Toast.makeText(this, inputtext, Toast.LENGTH_SHORT).show() //testing
-        }
 
         // Set the adapter
         if (view is RecyclerView) {
@@ -37,7 +31,13 @@ class MainActivity : AppCompatActivity() {
                     else -> GridLayoutManager(context, columnCount)
 
                 }
-                ItemRepository.getItem(ctx, "3", {
+                val searchButton = findViewById<Button>(R.id.showInput)
+                val editText = findViewById<EditText>(R.id.editText)
+                searchButton.setOnClickListener {
+                    var inputtext = editText.text //set value
+                }
+
+                getItem(ctx, "2", {
                     adapter = MyItemRecyclerViewAdapter(it)
                     Log.d(TAG, "$it")
                 }, {

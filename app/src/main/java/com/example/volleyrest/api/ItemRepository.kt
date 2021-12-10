@@ -11,8 +11,10 @@ private const val TAG = "Item"
 class ItemRepository {
 
     companion object {
+
         fun getItem(ctx: Context, id: String, success: (Item) -> Int, fail: (VolleyError) -> Int)
         {
+
             val encodedNumber = URLEncoder.encode(id, "UTF-8")
             val url = "https://api.osrsbox.com/items/${encodedNumber}"
             Log.d(TAG, "Initiating request to $url")
